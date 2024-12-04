@@ -1,0 +1,37 @@
+/* Slide-in animation from the left */
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Bouncing effect for the text */
+@keyframes bounce-in {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the slide-in animation */
+.animate-slide-in-left {
+  animation: slide-in-left 1s ease-out forwards;
+}
+
+/* Apply the bounce animation */
+.animate-bounce-in {
+  animation: bounce-in 1.5s ease-out;
+}
